@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DatabaseLayer
+namespace DatabaseLayer.Context
 {
-    public class Class1
+    internal class UserContext
     {
     }
 }

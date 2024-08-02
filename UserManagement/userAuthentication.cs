@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UserManagement
 {
-    public class Class1
+    internal class userAuthentication
     {
     }
 }
