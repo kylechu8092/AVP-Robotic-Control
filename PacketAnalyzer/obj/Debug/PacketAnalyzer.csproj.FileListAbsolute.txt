@@ -1,0 +1,6 @@
+C:\Users\denis\source\repos\AVP Robotic Control\PacketAnalyzer\bin\Debug\PacketAnalyzer.dll
+C:\Users\denis\source\repos\AVP Robotic Control\PacketAnalyzer\bin\Debug\PacketAnalyzer.pdb
+C:\Users\denis\source\repos\AVP Robotic Control\PacketAnalyzer\obj\Debug\PacketAnalyzer.csproj.AssemblyReference.cache
+C:\Users\denis\source\repos\AVP Robotic Control\PacketAnalyzer\obj\Debug\PacketAnalyzer.csproj.CoreCompileInputs.cache
+C:\Users\denis\source\repos\AVP Robotic Control\PacketAnalyzer\obj\Debug\PacketAnalyzer.dll
+C:\Users\denis\source\repos\AVP Robotic Control\PacketAnalyzer\obj\Debug\PacketAnalyzer.pdb
