@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DatabaseLayer.Context
 {
-    internal class UserContext
+    public class UserContext
     {
+
     }
 }
