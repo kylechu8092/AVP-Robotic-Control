@@ -1,0 +1,6 @@
+C:\Users\denis\source\repos\AVP Robotic Control\UserManagement\bin\Debug\UserManagement.dll
+C:\Users\denis\source\repos\AVP Robotic Control\UserManagement\bin\Debug\UserManagement.pdb
+C:\Users\denis\source\repos\AVP Robotic Control\UserManagement\obj\Debug\UserManagement.csproj.AssemblyReference.cache
+C:\Users\denis\source\repos\AVP Robotic Control\UserManagement\obj\Debug\UserManagement.csproj.CoreCompileInputs.cache
+C:\Users\denis\source\repos\AVP Robotic Control\UserManagement\obj\Debug\UserManagement.dll
+C:\Users\denis\source\repos\AVP Robotic Control\UserManagement\obj\Debug\UserManagement.pdb

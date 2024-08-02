@@ -1,0 +1,6 @@
+C:\Users\denis\source\repos\AVP Robotic Control\DatabaseLayer\bin\Debug\DatabaseLayer.dll
+C:\Users\denis\source\repos\AVP Robotic Control\DatabaseLayer\bin\Debug\DatabaseLayer.pdb
+C:\Users\denis\source\repos\AVP Robotic Control\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.AssemblyReference.cache
+C:\Users\denis\source\repos\AVP Robotic Control\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.CoreCompileInputs.cache
+C:\Users\denis\source\repos\AVP Robotic Control\DatabaseLayer\obj\Debug\DatabaseLayer.dll
+C:\Users\denis\source\repos\AVP Robotic Control\DatabaseLayer\obj\Debug\DatabaseLayer.pdb
