@@ -1,0 +1,10 @@
+C:\Users\denis\source\repos\AVP Robotic Control\LoginForm\obj\Debug\LoginForm.csproj.AssemblyReference.cache
+C:\Users\denis\source\repos\AVP Robotic Control\LoginForm\obj\Debug\LoginForm.LoginUI.resources
+C:\Users\denis\source\repos\AVP Robotic Control\LoginForm\obj\Debug\LoginForm.Properties.Resources.resources
+C:\Users\denis\source\repos\AVP Robotic Control\LoginForm\obj\Debug\LoginForm.csproj.GenerateResource.cache
+C:\Users\denis\source\repos\AVP Robotic Control\LoginForm\obj\Debug\LoginForm.csproj.CoreCompileInputs.cache
+C:\Users\denis\source\repos\AVP Robotic Control\LoginForm\bin\Debug\LoginForm.exe.config
+C:\Users\denis\source\repos\AVP Robotic Control\LoginForm\bin\Debug\LoginForm.exe
+C:\Users\denis\source\repos\AVP Robotic Control\LoginForm\bin\Debug\LoginForm.pdb
+C:\Users\denis\source\repos\AVP Robotic Control\LoginForm\obj\Debug\LoginForm.exe
+C:\Users\denis\source\repos\AVP Robotic Control\LoginForm\obj\Debug\LoginForm.pdb
