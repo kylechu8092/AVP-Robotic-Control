@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginForm", "LoginForm\LoginForm.csproj", "{199B657A-F746-49E2-9064-69ABC77EC71D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application UI", "LoginForm\Application UI.csproj", "{199B657A-F746-49E2-9064-69ABC77EC71D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseLayer", "DatabaseLayer\DatabaseLayer.csproj", "{A9A1754E-CED9-4125-BF22-EFE6D2CBE987}"
 EndProject
