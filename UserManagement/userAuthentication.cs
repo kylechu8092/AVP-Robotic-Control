@@ -10,9 +10,9 @@ using DatabaseLayer.Models;
 
 namespace UserManagement
 {
-    public class userAuthentication
+    public class userAuthentication : IuserAuthentication
     {
-        UserRepository authenticator;
+        UserRepository authenticator = new UserRepository();
         UserProfile mapper = new UserProfile();
         UserDTO currUser;
 

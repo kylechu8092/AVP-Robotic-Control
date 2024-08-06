@@ -44,15 +44,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IuserAuthentication.cs" />
     <Compile Include="UserProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="userAuthentication.cs" />
     <Compile Include="UserDTO.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DatabaseLayer\DatabaseLayer.csproj">
+    <ProjectReference Include="..\DatabaseLayer\ApplicationDatabase.csproj">
       <Project>{a9a1754e-ced9-4125-bf22-efe6d2cbe987}</Project>
-      <Name>DatabaseLayer</Name>
+      <Name>ApplicationDatabase</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

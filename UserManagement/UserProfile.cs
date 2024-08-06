@@ -9,15 +9,23 @@ namespace UserManagement
 {
     public class UserProfile : Profile
     {
-        Mapper map;
+        IMapper _map;
         public UserProfile() 
         {
-            CreateMap<User, UserDTO>();
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<User, UserDTO>();
+            });
+            _map =config.CreateMapper();
         }
         
         public UserDTO createDTO(User u)
         {
-            return map.Map<User, UserDTO>(u);
+            if (u == null)
+            {
+                throw new Exception("Null user");
+            }
+            return _map.Map<User, UserDTO>(u);
         }
     }
 }

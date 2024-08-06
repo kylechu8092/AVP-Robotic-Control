@@ -19,6 +19,7 @@ namespace LoginForm
         {
             InitializeComponent();
             InitalizeFields();
+            createUserAuth();
         }
 
         public void InitalizeFields()
@@ -99,7 +100,7 @@ namespace LoginForm
                 }
                 else
                 {
-                    if (true)//userAuthentication.isAuthenticated(usernameTxtBox.Text, passwordTxtBox.Text))
+                    if (userAuthentication.isAuthenticated(usernameTxtBox.Text, passwordTxtBox.Text))
                     {
                         MainUI mainUI = new MainUI();
                         mainUI.Show();
