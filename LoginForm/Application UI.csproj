@@ -193,6 +193,36 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceForms\Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServiceForms\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceForms\PacketUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServiceForms\PacketUI.Designer.cs">
+      <DependentUpon>PacketUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceForms\SettingsUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServiceForms\SettingsUI.Designer.cs">
+      <DependentUpon>SettingsUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceForms\terminalUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServiceForms\terminalUI.Designer.cs">
+      <DependentUpon>terminalUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceForms\robotControlUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServiceForms\robotControlUI.Designer.cs">
+      <DependentUpon>robotControlUI.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\LoginUI.resx">
       <DependentUpon>LoginUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -209,6 +239,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ServiceForms\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceForms\PacketUI.resx">
+      <DependentUpon>PacketUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceForms\robotControlUI.resx">
+      <DependentUpon>robotControlUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceForms\SettingsUI.resx">
+      <DependentUpon>SettingsUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceForms\terminalUI.resx">
+      <DependentUpon>terminalUI.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\ReaLTaiizor.AirButton.datasource" />
     <None Include="Properties\DataSources\ReaLTaiizor.AirCheckbox+CheckedChangedEventHandler.datasource" />
@@ -547,6 +592,10 @@
     <None Include="Resources\icons8-close-50.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RoboticControl\RoboticControl.csproj">
+      <Project>{a22a901f-1deb-4693-a741-b26d4bd2f83a}</Project>
+      <Name>RoboticControl</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UserManagement\UserManagement.csproj">
       <Project>{146ad383-98a5-4d7f-9dd4-681ad7c93a6e}</Project>
       <Name>UserManagement</Name>

@@ -9,5 +9,7 @@ namespace UserManagement
     internal interface IuserAuthentication
     {
         bool isAuthenticated(string username, string password);
+
+        UserDTO GetUserDTO();
     }
 }

@@ -17,9 +17,7 @@ namespace ApplicationDatabase.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-3MNQSH8\\SQLSERVER;Initial Catalog= ApplicationDatabase;Integrated Security=True;Connect Timeout=10;Encrypt=True;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-
-            //optionsBuilder.UseSqlServer("Data Source=DESKTOP-3MNQSH8\\SQLSERVER;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust_Server_Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
+            optionsBuilder.UseSqlServer("Data Source=P43S\\AVP_DB_SERVER;Initial Catalog = ApplicationDatabase; User ID=sa;Password=avp123456;Connect Timeout=30;Encrypt=True;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacketAnalyzer", "PacketAna
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations", "Migrations\Migrations.csproj", "{0E27B374-C103-41E5-8C79-D0D16849F0CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadManagement", "ThreadManagement\ThreadManagement.csproj", "{2B4D8AF0-7101-4C7A-8BA0-8AF18EC38C1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{0E27B374-C103-41E5-8C79-D0D16849F0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E27B374-C103-41E5-8C79-D0D16849F0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E27B374-C103-41E5-8C79-D0D16849F0CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B4D8AF0-7101-4C7A-8BA0-8AF18EC38C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B4D8AF0-7101-4C7A-8BA0-8AF18EC38C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B4D8AF0-7101-4C7A-8BA0-8AF18EC38C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B4D8AF0-7101-4C7A-8BA0-8AF18EC38C1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

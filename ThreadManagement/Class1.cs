@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
-namespace RoboticControl
+namespace ThreadManagement
 {
-    public class Class1
+    public static class ThreadList
     {
+        static Thread connection;
     }
 }

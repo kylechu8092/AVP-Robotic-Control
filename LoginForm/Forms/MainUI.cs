@@ -6,15 +6,41 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using FontAwesome;
+using LoginForm.ServiceForms;
 using ReaLTaiizor;
+using UserManagement;
 
 namespace LoginForm.Forms
 {
     public partial class MainUI : Form
     {
-        public MainUI()
+        UserDTO currUser;
+        public MainUI(UserDTO currUser)
         {
             InitializeComponent();
+            this.currUser = currUser;
+            setPermissions();
+            setInitialDisplay();
+            
+        }
+
+        public void setInitialDisplay()
+        {
+            Dashboard dash = new Dashboard(currUser);
+            displayPanel.Dock = DockStyle.Fill;
+            displayPanel.Controls.Clear();
+            displayPanel.Controls.Add(dash);
+        }
+        public void setPermissions()
+        {
+            if (currUser.role.Equals("ADMIN"))
+            {
+                //Allow for anything
+            }
+            else
+            {
+                
+            }
         }
 
         
@@ -69,7 +95,7 @@ namespace LoginForm.Forms
         }
 
         private void sidebarContainer_Paint(object sender, PaintEventArgs e)
-        {
+                {
 
         }
 
@@ -81,6 +107,18 @@ namespace LoginForm.Forms
         
         private void armControlBtn_Click(object sender, EventArgs e)
         {
+            try
+            {
+                robotControlUI robotControlUI = new robotControlUI();
+                displayPanel.Controls.Clear();
+                displayPanel.Controls.Add(robotControlUI);
+            }
+            catch (Exception ex)
+            {
+                
+                    MessageBox.Show(ex.Message);
+            }
+            
 
         }
     }

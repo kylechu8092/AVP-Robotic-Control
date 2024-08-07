@@ -102,7 +102,8 @@ namespace LoginForm
                 {
                     if (userAuthentication.isAuthenticated(usernameTxtBox.Text, passwordTxtBox.Text))
                     {
-                        MainUI mainUI = new MainUI();
+                        UserDTO currUser = userAuthentication.GetUserDTO();
+                        MainUI mainUI = new MainUI(currUser);
                         mainUI.Show();
                         this.Hide();
                     }

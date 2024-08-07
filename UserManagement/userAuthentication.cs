@@ -46,5 +46,10 @@ namespace UserManagement
                 return false;
             }
         }
+
+        public UserDTO GetUserDTO()
+        {
+            return currUser;
+        }
     }
 }
