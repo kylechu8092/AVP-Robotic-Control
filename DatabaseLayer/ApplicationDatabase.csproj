@@ -216,7 +216,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminRepository.cs" />
     <Compile Include="Context\UserContext.cs" />
+    <Compile Include="IAdminRepository.cs" />
     <Compile Include="Migrations\20240805234235_InitialCreate.cs" />
     <Compile Include="Migrations\20240805234235_InitialCreate.Designer.cs">
       <DependentUpon>20240805234235_InitialCreate.cs</DependentUpon>

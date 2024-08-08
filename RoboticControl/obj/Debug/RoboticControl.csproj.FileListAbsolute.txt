@@ -4,3 +4,9 @@ C:\Users\denis\source\repos\AVP Robotic Control\RoboticControl\obj\Debug\Robotic
 C:\Users\denis\source\repos\AVP Robotic Control\RoboticControl\obj\Debug\RoboticControl.csproj.CoreCompileInputs.cache
 C:\Users\denis\source\repos\AVP Robotic Control\RoboticControl\obj\Debug\RoboticControl.dll
 C:\Users\denis\source\repos\AVP Robotic Control\RoboticControl\obj\Debug\RoboticControl.pdb
+C:\Users\Cloud\OneDrive\Pictures\New folder\RoboticControl\bin\Debug\RoboticControl.dll
+C:\Users\Cloud\OneDrive\Pictures\New folder\RoboticControl\bin\Debug\RoboticControl.pdb
+C:\Users\Cloud\OneDrive\Pictures\New folder\RoboticControl\obj\Debug\RoboticControl.csproj.AssemblyReference.cache
+C:\Users\Cloud\OneDrive\Pictures\New folder\RoboticControl\obj\Debug\RoboticControl.csproj.CoreCompileInputs.cache
+C:\Users\Cloud\OneDrive\Pictures\New folder\RoboticControl\obj\Debug\RoboticControl.dll
+C:\Users\Cloud\OneDrive\Pictures\New folder\RoboticControl\obj\Debug\RoboticControl.pdb
