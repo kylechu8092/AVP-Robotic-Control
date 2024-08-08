@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace PacketAnalyzer
 {
-    public class Class1
+    public interface IPacketcs
     {
+        void capturePacket();
+
+
     }
 }

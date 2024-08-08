@@ -51,6 +51,18 @@ namespace RoboticControl
             }
         }
 
+        public void communicate()
+        {
+            try
+            {
+                sendCommand(RobotCommands.contact);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
         public void up()
         {
             try
@@ -104,6 +116,18 @@ namespace RoboticControl
             try
             {
                 sendCommand(RobotCommands.extend);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public void moveTo(int station)
+        {
+            try
+            {
+                sendCommand(RobotCommands.moveTo + station.ToString() + "\r\n");
             }
             catch (Exception e)
             {

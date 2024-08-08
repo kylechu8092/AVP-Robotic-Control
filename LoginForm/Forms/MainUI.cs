@@ -115,11 +115,24 @@ namespace LoginForm.Forms
             }
             catch (Exception ex)
             {
-                
-                    MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message);
             }
             
 
+        }
+
+        private void packetCaptureBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                PacketUI packetUI = new PacketUI();
+                displayPanel.Controls.Clear();
+                displayPanel.Controls.Add(packetUI);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

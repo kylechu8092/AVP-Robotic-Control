@@ -35,18 +35,18 @@ namespace LoginForm.Forms
             this.topPanel = new System.Windows.Forms.Panel();
             this.controlBox1 = new ReaLTaiizor.ControlBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.menuhamBtn = new System.Windows.Forms.PictureBox();
             this.sidebarContainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.menuTransition = new System.Windows.Forms.Timer(this.components);
-            this.siderbarTransition = new System.Windows.Forms.Timer(this.components);
-            this.displayPanel = new ReaLTaiizor.Panel();
             this.armControlBtn = new System.Windows.Forms.Button();
             this.packetCaptureBtn = new System.Windows.Forms.Button();
             this.terminalBtn = new System.Windows.Forms.Button();
             this.settingsBtn = new System.Windows.Forms.Button();
-            this.menuhamBtn = new System.Windows.Forms.PictureBox();
+            this.menuTransition = new System.Windows.Forms.Timer(this.components);
+            this.siderbarTransition = new System.Windows.Forms.Timer(this.components);
+            this.displayPanel = new ReaLTaiizor.Panel();
             this.topPanel.SuspendLayout();
-            this.sidebarContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuhamBtn)).BeginInit();
+            this.sidebarContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // topPanel
@@ -65,7 +65,6 @@ namespace LoginForm.Forms
             // 
             this.controlBox1.BackColor = System.Drawing.Color.White;
             this.controlBox1.CloseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
-            this.controlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.controlBox1.DefaultLocation = false;
             this.controlBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.controlBox1.EnableHoverHighlight = true;
@@ -90,6 +89,16 @@ namespace LoginForm.Forms
             this.label1.TabIndex = 1;
             this.label1.Text = "AVP TECHNOLOGY LLC";
             // 
+            // menuhamBtn
+            // 
+            this.menuhamBtn.Image = global::LoginForm.Properties.Resources.icons8_hamburger_30;
+            this.menuhamBtn.Location = new System.Drawing.Point(12, 5);
+            this.menuhamBtn.Name = "menuhamBtn";
+            this.menuhamBtn.Size = new System.Drawing.Size(46, 26);
+            this.menuhamBtn.TabIndex = 0;
+            this.menuhamBtn.TabStop = false;
+            this.menuhamBtn.Click += new System.EventHandler(this.menuhamBtn_Click);
+            // 
             // sidebarContainer
             // 
             this.sidebarContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
@@ -103,26 +112,6 @@ namespace LoginForm.Forms
             this.sidebarContainer.Size = new System.Drawing.Size(180, 578);
             this.sidebarContainer.TabIndex = 7;
             this.sidebarContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.sidebarContainer_Paint);
-            // 
-            // menuTransition
-            // 
-            this.menuTransition.Tick += new System.EventHandler(this.menuTransition_Tick);
-            // 
-            // siderbarTransition
-            // 
-            this.siderbarTransition.Interval = 15;
-            this.siderbarTransition.Tick += new System.EventHandler(this.siderbarTransition_Tick);
-            // 
-            // displayPanel
-            // 
-            this.displayPanel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.displayPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.displayPanel.Location = new System.Drawing.Point(180, 36);
-            this.displayPanel.Name = "displayPanel";
-            this.displayPanel.Padding = new System.Windows.Forms.Padding(5);
-            this.displayPanel.Size = new System.Drawing.Size(913, 578);
-            this.displayPanel.TabIndex = 8;
-            this.displayPanel.Text = "panel1";
             // 
             // armControlBtn
             // 
@@ -154,6 +143,7 @@ namespace LoginForm.Forms
             this.packetCaptureBtn.Text = "           Packet Capture";
             this.packetCaptureBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.packetCaptureBtn.UseVisualStyleBackColor = false;
+            this.packetCaptureBtn.Click += new System.EventHandler(this.packetCaptureBtn_Click);
             // 
             // terminalBtn
             // 
@@ -185,15 +175,25 @@ namespace LoginForm.Forms
             this.settingsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.settingsBtn.UseVisualStyleBackColor = false;
             // 
-            // menuhamBtn
+            // menuTransition
             // 
-            this.menuhamBtn.Image = global::LoginForm.Properties.Resources.icons8_hamburger_30;
-            this.menuhamBtn.Location = new System.Drawing.Point(12, 5);
-            this.menuhamBtn.Name = "menuhamBtn";
-            this.menuhamBtn.Size = new System.Drawing.Size(46, 26);
-            this.menuhamBtn.TabIndex = 0;
-            this.menuhamBtn.TabStop = false;
-            this.menuhamBtn.Click += new System.EventHandler(this.menuhamBtn_Click);
+            this.menuTransition.Tick += new System.EventHandler(this.menuTransition_Tick);
+            // 
+            // siderbarTransition
+            // 
+            this.siderbarTransition.Interval = 15;
+            this.siderbarTransition.Tick += new System.EventHandler(this.siderbarTransition_Tick);
+            // 
+            // displayPanel
+            // 
+            this.displayPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.displayPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.displayPanel.Location = new System.Drawing.Point(180, 36);
+            this.displayPanel.Name = "displayPanel";
+            this.displayPanel.Padding = new System.Windows.Forms.Padding(5);
+            this.displayPanel.Size = new System.Drawing.Size(913, 578);
+            this.displayPanel.TabIndex = 8;
+            this.displayPanel.Text = "panel1";
             // 
             // MainUI
             // 
@@ -208,8 +208,8 @@ namespace LoginForm.Forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.topPanel.ResumeLayout(false);
             this.topPanel.PerformLayout();
-            this.sidebarContainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.menuhamBtn)).EndInit();
+            this.sidebarContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

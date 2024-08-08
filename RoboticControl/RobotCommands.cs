@@ -20,6 +20,6 @@ namespace RoboticControl
 
         public static string contact = "HLLO\r\n";
 
-        public static string moveTo = "GOTO N \r\n";
+        public static string moveTo = "GOTO N ";
     }
 }
