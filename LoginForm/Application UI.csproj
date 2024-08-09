@@ -642,6 +642,10 @@
     <None Include="Resources\icons8-close-50.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DatabaseLayer\ApplicationDatabase.csproj">
+      <Project>{a9a1754e-ced9-4125-bf22-efe6d2cbe987}</Project>
+      <Name>ApplicationDatabase</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RoboticControl\RoboticControl.csproj">
       <Project>{a22a901f-1deb-4693-a741-b26d4bd2f83a}</Project>
       <Name>RoboticControl</Name>

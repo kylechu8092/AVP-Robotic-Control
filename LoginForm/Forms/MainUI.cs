@@ -9,19 +9,22 @@ using FontAwesome;
 using LoginForm.ServiceForms;
 using ReaLTaiizor;
 using UserManagement;
+using ApplicationDatabase;
+using DatabaseLayer;
 
 namespace LoginForm.Forms
 {
     public partial class MainUI : Form
     {
         UserDTO currUser;
+
+        
         public MainUI(UserDTO currUser)
         {
             InitializeComponent();
             this.currUser = currUser;
             setPermissions();
             setInitialDisplay();
-            
         }
 
         public void setInitialDisplay()

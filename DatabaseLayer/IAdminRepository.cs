@@ -11,10 +11,10 @@ namespace DatabaseLayer
     {
         IEnumerable<User> getAllUsers();
 
-        void createNew();
+        void addNewUser(int id, string username, string password, Boolean isActive, string role);
 
-        void deleteUser();
+        void deleteOldUser(int userID);
 
-        void updateUser();
+        void updateUser(User referencedUser);
     }
 }

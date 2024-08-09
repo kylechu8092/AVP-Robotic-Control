@@ -14,11 +14,11 @@ namespace LoginForm.ServiceForms
 {
     public partial class SettingsUI : UserControl
     {
-        userToDTOArray admin;
+        UserToDTOArray admin;
         public SettingsUI()
         {
             InitializeComponent();
-            admin = new userToDTOArray();
+            admin = new UserToDTOArray();
         }
 
         private void getAllUsers()

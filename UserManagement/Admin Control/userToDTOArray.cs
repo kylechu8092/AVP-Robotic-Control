@@ -9,13 +9,13 @@ using DatabaseLayer.Models;
 
 namespace UserManagement
 {
-    public class userToDTOArray 
+    public class UserToDTOArray 
     {
-        AdminRepository admin;
-        UserProfile mapper;
-        List<UserDTO> userDTOList;
+        AdminRepository admin = new AdminRepository();
+        UserProfile mapper = new UserProfile();
+        List<UserDTO> userDTOList = new List<UserDTO>();
 
-        public userToDTOArray(){ }
+        public UserToDTOArray(){ }
 
         public List<UserDTO> getUserDTOArray()
         {
@@ -33,7 +33,6 @@ namespace UserManagement
         {
             try
             {
-                mapper = new UserProfile();
                 if (users == null)
                 {
                     throw new Exception("Null user");
@@ -49,7 +48,6 @@ namespace UserManagement
             {
                 throw ex;
             }
-           
         }
     }
 }

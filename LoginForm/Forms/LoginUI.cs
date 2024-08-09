@@ -14,7 +14,7 @@ namespace LoginForm
 {
     public partial class LoginUI : Form
     {
-        userAuthentication userAuthentication;
+        UserAuthentication userAuthentication;
         public LoginUI()
         {
             InitializeComponent();
@@ -34,7 +34,7 @@ namespace LoginForm
         {
             try
             {
-                userAuthentication = new userAuthentication();
+                userAuthentication = new UserAuthentication();
             }
             catch { }
         }

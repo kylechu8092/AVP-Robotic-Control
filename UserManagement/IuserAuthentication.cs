@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UserManagement
 {
-    internal interface IuserAuthentication
+    internal interface IUserAuthentication
     {
         bool isAuthenticated(string username, string password);
 

@@ -10,13 +10,13 @@ using DatabaseLayer.Models;
 
 namespace UserManagement
 {
-    public class userAuthentication : IuserAuthentication
+    public class UserAuthentication : IUserAuthentication
     {
         UserRepository authenticator = new UserRepository();
         UserProfile mapper = new UserProfile();
         UserDTO currUser;
 
-        public userAuthentication() { }
+        public UserAuthentication() { }
 
         public bool isAuthenticated(string username, string password)
         {
