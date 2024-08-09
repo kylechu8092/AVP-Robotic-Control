@@ -1,0 +1,107 @@
+[33mcommit 768d0d15aac31de7990e799948b0ff4c00da5667[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/A011[m[33m)[m
+Author: CloudTale <CloudTale13@gmail.com>
+Date:   Fri Aug 9 14:01:00 2024 -0700
+
+    Admin Control
+
+[33mcommit 26062f55ba7c6b87399142be5b06a2d90ccc6135[m[33m ([m[1;32mfeature/A008[m[33m)[m
+Author: CloudTale <CloudTale13@gmail.com>
+Date:   Thu Aug 8 15:46:51 2024 -0700
+
+    List of users
+
+[33mcommit 033cf4f99c9ce0bb2dc7efb18c0e22a1c6674462[m[33m ([m[1;31morigin/feature/A008[m[33m)[m
+Author: unknown <kc5548092@gmail.com>
+Date:   Thu Aug 8 11:01:54 2024 -0700
+
+    Fixed package
+
+[33mcommit 07c1c18311e8ff694af8e4cc22da7855fdf5a19b[m
+Merge: ec3f5e8 74ea9b1
+Author: unknown <kc5548092@gmail.com>
+Date:   Wed Aug 7 16:37:56 2024 -0700
+
+    Update dashboard and robot:
+    Merge branch 'feature/A008' of github.com:kylechu8092/AVP-Robotic-Control into feature/A008
+
+[33mcommit ec3f5e858c9e372066af40c620c08bf750f89831[m
+Author: unknown <kc5548092@gmail.com>
+Date:   Wed Aug 7 16:36:59 2024 -0700
+
+    Robot and mainform updates
+
+[33mcommit 74ea9b121f91de0b23f9b5e952e12aaa02425706[m
+Merge: 04f2c9d 3f44586
+Author: Kyle Chu <116324806+kylechu8092@users.noreply.github.com>
+Date:   Tue Aug 6 15:22:54 2024 -0700
+
+    Merge pull request #3 from kylechu8092/feature/A007
+    
+    Feature/a007
+
+[33mcommit 3f44586a02a73dfac7bfba97fbf39fb383797257[m[33m ([m[1;31morigin/feature/A007[m[33m)[m
+Merge: 5589316 3efbb05
+Author: unknown <kc5548092@gmail.com>
+Date:   Tue Aug 6 15:09:02 2024 -0700
+
+    fixed db layer and automapper
+
+[33mcommit 55893168be7b4e7bd03ecab05f6c595a461e3da5[m
+Author: unknown <kc5548092@gmail.com>
+Date:   Tue Aug 6 15:07:28 2024 -0700
+
+    Fixed DB, automap
+
+[33mcommit 8c63cfc184bd40eafbdd022f3eb29665c859f0de[m
+Author: unknown <kc5548092@gmail.com>
+Date:   Tue Aug 6 14:54:05 2024 -0700
+
+    Fixed DB layer, automapper
+
+[33mcommit 3efbb0576e6d6d0cf249c1f3d632be04f6996e5a[m
+Merge: 848282d 64ec11b
+Author: kylechu8092 <116324806+kylechu8092@users.noreply.github.com>
+Date:   Mon Aug 5 15:08:35 2024 -0700
+
+    Merge pull request #2 from kylechu8092/feature/A004
+    
+    Feature/A004 - Feature/A007
+
+[33mcommit 64ec11b4d916481323346fda3dc41b4bfbc0f7b9[m
+Author: unknown <kc5548092@gmail.com>
+Date:   Mon Aug 5 15:06:45 2024 -0700
+
+    Built main UI, business logic for authentication, DTO
+
+[33mcommit d087e5aedd64d8ee3046995a3d051784784b32c4[m
+Author: unknown <kc5548092@gmail.com>
+Date:   Fri Aug 2 13:48:08 2024 -0700
+
+    Added the packages to db layer
+
+[33mcommit 6f02b545e60358f1c8a4ab878487d3c3ae16990a[m
+Author: unknown <kc5548092@gmail.com>
+Date:   Fri Aug 2 13:39:22 2024 -0700
+
+    Added db structure and prepared business logic
+
+[33mcommit 04f2c9dda9a5f2cf59b773027596020fce8b23a1[m[33m ([m[1;31morigin/feature/A011[m[33m, [m[1;31morigin/develop[m[33m)[m
+Merge: 848282d ef82daa
+Author: kylechu8092 <116324806+kylechu8092@users.noreply.github.com>
+Date:   Fri Aug 2 13:07:11 2024 -0700
+
+    Merge pull request #1 from kylechu8092/feature/A001
+    
+    Login UI and file structure
+
+[33mcommit ef82daa912b1bdf1c118fcce3fd7c6842bc71259[m
+Author: unknown <kc5548092@gmail.com>
+Date:   Fri Aug 2 13:03:42 2024 -0700
+
+    Login UI and file structure
+
+[33mcommit 848282d1ef92bf26226804c8615dd8073bbc5275[m[33m ([m[1;31morigin/release/1.0.0.1[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: unknown <kc5548092@gmail.com>
+Date:   Fri Aug 2 11:16:34 2024 -0700
+
+    first commit

@@ -8,5 +8,6 @@ namespace SerialTerminal
 {
     public class Class1
     {
+
     }
 }
