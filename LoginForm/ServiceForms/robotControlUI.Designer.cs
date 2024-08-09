@@ -47,6 +47,7 @@
             // upBtn
             // 
             this.upBtn.ButtonType = ReaLTaiizor.HopeButtonType.Primary;
+            this.upBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.upBtn.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.upBtn.Location = new System.Drawing.Point(249, 35);
             this.upBtn.Name = "upBtn";
@@ -59,6 +60,7 @@
             // downBtn
             // 
             this.downBtn.ButtonType = ReaLTaiizor.HopeButtonType.Primary;
+            this.downBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.downBtn.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.downBtn.Location = new System.Drawing.Point(249, 202);
             this.downBtn.Name = "downBtn";
@@ -71,6 +73,7 @@
             // homeBtn
             // 
             this.homeBtn.ButtonType = ReaLTaiizor.HopeButtonType.Primary;
+            this.homeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.homeBtn.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.homeBtn.Location = new System.Drawing.Point(249, 119);
             this.homeBtn.Name = "homeBtn";
@@ -83,6 +86,7 @@
             // extendBtn
             // 
             this.extendBtn.ButtonType = ReaLTaiizor.HopeButtonType.Primary;
+            this.extendBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.extendBtn.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.extendBtn.Location = new System.Drawing.Point(67, 119);
             this.extendBtn.Name = "extendBtn";
@@ -95,6 +99,7 @@
             // retractBtn
             // 
             this.retractBtn.ButtonType = ReaLTaiizor.HopeButtonType.Primary;
+            this.retractBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.retractBtn.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.retractBtn.Location = new System.Drawing.Point(430, 119);
             this.retractBtn.Name = "retractBtn";
@@ -107,6 +112,7 @@
             // moveBtn
             // 
             this.moveBtn.ButtonType = ReaLTaiizor.HopeButtonType.Primary;
+            this.moveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.moveBtn.Dock = System.Windows.Forms.DockStyle.Right;
             this.moveBtn.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.moveBtn.Location = new System.Drawing.Point(127, 0);
@@ -129,6 +135,7 @@
             // skyComboBox1
             // 
             this.skyComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.skyComboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.skyComboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.skyComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.skyComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;

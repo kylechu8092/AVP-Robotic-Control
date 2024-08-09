@@ -65,6 +65,7 @@ namespace LoginForm.Forms
             // 
             this.controlBox1.BackColor = System.Drawing.Color.White;
             this.controlBox1.CloseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
+            this.controlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.controlBox1.DefaultLocation = false;
             this.controlBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.controlBox1.EnableHoverHighlight = true;
@@ -174,6 +175,7 @@ namespace LoginForm.Forms
             this.settingsBtn.Text = "           Settings";
             this.settingsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.settingsBtn.UseVisualStyleBackColor = false;
+            this.settingsBtn.Click += new System.EventHandler(this.settingsBtn_Click);
             // 
             // menuTransition
             // 

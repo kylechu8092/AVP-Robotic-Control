@@ -134,5 +134,19 @@ namespace LoginForm.Forms
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void settingsBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SettingsUI settingsUI = new SettingsUI();
+                displayPanel.Controls.Clear();
+                displayPanel.Controls.Add(settingsUI);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

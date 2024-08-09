@@ -15,6 +15,27 @@ namespace LoginForm.ServiceForms
         public SettingsUI()
         {
             InitializeComponent();
+            InitializeUserList();
+            InitializeAddUser();
+        }
+
+        public void InitializeUserList()
+        {
+            displayPanelUser.Controls.Clear();
+            for (int i = 0; i < 20; i++)
+            {
+                displayPanelUser.Controls.Add(new UserControlComponent(new UserManagement.UserDTO()));
+            }
+        }
+
+        public void InitializeAddUser()
+        {
+            addUserPanel.Controls.Add(new AddUserForm());
+        }
+
+        private void SettingsUI_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
