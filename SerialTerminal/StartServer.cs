@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using ThreadManagement;
 
@@ -13,6 +14,7 @@ namespace SerialTerminal
     {
         TcpListener listener;
         TcpClient TcpClient = new TcpClient();
+        SerialRead reference = new SerialRead();
 
         public StartServer() { }
 
@@ -26,7 +28,8 @@ namespace SerialTerminal
                 listener = new TcpListener(endPoint);
                 listener.Start();
                 TcpClient = listener.AcceptTcpClient();
-                ThreadManager
+                ThreadList.readThread = new Thread(reference.readMessage);
+                ThreadList.readThread.Start();
             }
             catch { }
         }

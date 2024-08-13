@@ -17,11 +17,12 @@ namespace SerialTerminal
 
         public SerialRead() { } 
 
-        public string readMessage()
+        public void readMessage()
         {
             try
             {
                 tcpClient.Connect(IP, port);
+                serverStream = tcpClient.GetStream();
                 byte[] instream;
                 var buffSize = 0;
                 while(true)
@@ -30,28 +31,24 @@ namespace SerialTerminal
                     {
                         if (tcpClient.Connected)
                         {
-                            serverStream = tcpClient.GetStream();
                             serverStream.ReadTimeout = 2000;
+                            instream = new byte[buffSize];
                             buffSize = tcpClient.ReceiveBufferSize;
-                            instream = new byte[buffSize];  
                             int bytesRead = serverStream.Read(instream, 0, buffSize);
                             if (bytesRead > 0)
                             {
                                 string readData = Encoding.UTF8.GetString(instream, 0, buffSize);
-                                return readData;
                             }
 
                         }
                     }
                     catch 
                     {
-                        return null;
                     }
                 }
             }
             catch 
             {
-                return null;
             }
         }
     }

@@ -19,9 +19,13 @@ namespace SerialTerminal
         {
             try
             {
-                byte[] send = Encoding.UTF8.GetBytes(userInput);
-                var stream = tcpClient.GetStream();
-                stream.Write(send, 0, send.Length);
+                if (tcpClient.Connected)
+                {
+                    byte[] send = Encoding.UTF8.GetBytes(userInput);
+                    var stream = tcpClient.GetStream();
+                    stream.Write(send, 0, send.Length);
+                }
+
             }
             catch { }
         }
