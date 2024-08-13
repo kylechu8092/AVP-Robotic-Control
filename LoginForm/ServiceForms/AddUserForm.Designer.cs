@@ -42,18 +42,19 @@
             this.addBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addBtn.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold);
             this.addBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(137)))));
-            this.addBtn.Location = new System.Drawing.Point(387, 24);
+            this.addBtn.Location = new System.Drawing.Point(376, 24);
             this.addBtn.Name = "addBtn";
             this.addBtn.Size = new System.Drawing.Size(75, 23);
             this.addBtn.TabIndex = 11;
             this.addBtn.Text = "Add";
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
             // Role
             // 
             this.Role.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
             this.Role.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold);
             this.Role.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(137)))));
-            this.Role.Location = new System.Drawing.Point(297, 24);
+            this.Role.Location = new System.Drawing.Point(286, 24);
             this.Role.MaxLength = 32767;
             this.Role.MultiLine = false;
             this.Role.Name = "Role";
@@ -68,7 +69,7 @@
             this.usernameTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
             this.usernameTxt.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold);
             this.usernameTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(137)))));
-            this.usernameTxt.Location = new System.Drawing.Point(73, 24);
+            this.usernameTxt.Location = new System.Drawing.Point(62, 24);
             this.usernameTxt.MaxLength = 32767;
             this.usernameTxt.MultiLine = false;
             this.usernameTxt.Name = "usernameTxt";
@@ -83,7 +84,7 @@
             this.idTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
             this.idTxt.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold);
             this.idTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(137)))));
-            this.idTxt.Location = new System.Drawing.Point(31, 24);
+            this.idTxt.Location = new System.Drawing.Point(20, 24);
             this.idTxt.MaxLength = 32767;
             this.idTxt.MultiLine = false;
             this.idTxt.Name = "idTxt";
@@ -98,7 +99,7 @@
             this.isActiveTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
             this.isActiveTxt.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold);
             this.isActiveTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(137)))));
-            this.isActiveTxt.Location = new System.Drawing.Point(235, 24);
+            this.isActiveTxt.Location = new System.Drawing.Point(224, 24);
             this.isActiveTxt.MaxLength = 32767;
             this.isActiveTxt.MultiLine = false;
             this.isActiveTxt.Name = "isActiveTxt";
@@ -113,7 +114,7 @@
             this.passwordTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
             this.passwordTxt.Font = new System.Drawing.Font("Verdana", 6.75F, System.Drawing.FontStyle.Bold);
             this.passwordTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(137)))));
-            this.passwordTxt.Location = new System.Drawing.Point(154, 24);
+            this.passwordTxt.Location = new System.Drawing.Point(143, 24);
             this.passwordTxt.MaxLength = 32767;
             this.passwordTxt.MultiLine = false;
             this.passwordTxt.Name = "passwordTxt";
@@ -135,7 +136,7 @@
             this.Controls.Add(this.usernameTxt);
             this.Controls.Add(this.addBtn);
             this.Name = "AddUserForm";
-            this.Size = new System.Drawing.Size(913, 73);
+            this.Size = new System.Drawing.Size(497, 62);
             this.ResumeLayout(false);
 
         }

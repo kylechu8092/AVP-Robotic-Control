@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UserManagement;
+using UserManagement.Admin_Control;
 
 namespace LoginForm.ServiceForms
 {
     public partial class UserControlComponent : UserControl
     {
         UserDTO currUser;
+        DeleteUser deleteUser = new DeleteUser();
         public UserControlComponent(UserDTO user)
         {
             currUser = user;
@@ -34,7 +36,8 @@ namespace LoginForm.ServiceForms
         {
             try
             {
-
+                EditUser editUser = new EditUser();
+                editUser.editFields(currUser);
             }
             catch (Exception ex)
             {
@@ -46,10 +49,11 @@ namespace LoginForm.ServiceForms
         {
             try
             {
-
-            } catch (Exception ex) 
+                deleteUser.deleteUser(Int32.Parse(idTxt.Text));
+            }
+            catch (Exception ex) 
             {
-            
+                MessageBox.Show(ex.Message);
             }
         }
     }

@@ -151,7 +151,7 @@
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.editBtn);
             this.Name = "UserControlComponent";
-            this.Size = new System.Drawing.Size(832, 68);
+            this.Size = new System.Drawing.Size(576, 68);
             this.ResumeLayout(false);
 
         }

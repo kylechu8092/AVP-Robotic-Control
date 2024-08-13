@@ -44,6 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin Control\AddUser.cs" />
+    <Compile Include="Admin Control\DeleteUser.cs" />
+    <Compile Include="Admin Control\EditUser.cs" />
+    <Compile Include="Admin Control\UserToDTOArray.cs" />
     <Compile Include="IuserAuthentication.cs" />
     <Compile Include="UserProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

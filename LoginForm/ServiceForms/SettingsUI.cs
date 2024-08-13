@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UserManagement;
+using UserManagement.Admin_Control;
 
 namespace LoginForm.ServiceForms
 {
@@ -21,11 +23,20 @@ namespace LoginForm.ServiceForms
 
         public void InitializeUserList()
         {
-            displayPanelUser.Controls.Clear();
-            for (int i = 0; i < 20; i++)
+            try
             {
-                displayPanelUser.Controls.Add(new UserControlComponent(new UserManagement.UserDTO()));
+                List<UserDTO> currUsers = new UserToDTOArray().getUserDTOArray();
+                foreach (UserDTO userDTO in currUsers)
+                {
+                    UserControlComponent u = new UserControlComponent(userDTO);
+                    flowLayoutPanel1.Controls.Add(u);
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
         public void InitializeAddUser()
@@ -34,6 +45,11 @@ namespace LoginForm.ServiceForms
         }
 
         private void SettingsUI_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addUserPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }

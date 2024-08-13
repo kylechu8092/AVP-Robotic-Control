@@ -28,47 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.displayPanelUser = new System.Windows.Forms.FlowLayoutPanel();
             this.addUserPanel = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
-            // 
-            // displayPanelUser
-            // 
-            this.displayPanelUser.AutoScroll = true;
-            this.displayPanelUser.AutoScrollMargin = new System.Drawing.Size(0, 200);
-            this.displayPanelUser.AutoSize = true;
-            this.displayPanelUser.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.displayPanelUser.Location = new System.Drawing.Point(0, 548);
-            this.displayPanelUser.Name = "displayPanelUser";
-            this.displayPanelUser.Size = new System.Drawing.Size(913, 0);
-            this.displayPanelUser.TabIndex = 1;
             // 
             // addUserPanel
             // 
-            this.addUserPanel.AutoSize = true;
             this.addUserPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.addUserPanel.Location = new System.Drawing.Point(0, 0);
             this.addUserPanel.Name = "addUserPanel";
-            this.addUserPanel.Size = new System.Drawing.Size(913, 0);
+            this.addUserPanel.Size = new System.Drawing.Size(913, 73);
             this.addUserPanel.TabIndex = 2;
+            this.addUserPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.addUserPanel_Paint);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 72);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(900, 476);
+            this.flowLayoutPanel1.TabIndex = 3;
             // 
             // SettingsUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.addUserPanel);
-            this.Controls.Add(this.displayPanelUser);
             this.Name = "SettingsUI";
             this.Size = new System.Drawing.Size(913, 548);
             this.Load += new System.EventHandler(this.SettingsUI_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.FlowLayoutPanel displayPanelUser;
         private System.Windows.Forms.Panel addUserPanel;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
