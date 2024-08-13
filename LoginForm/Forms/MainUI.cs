@@ -148,5 +148,19 @@ namespace LoginForm.Forms
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void terminalBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                terminalUI terminalUI = new terminalUI();
+                displayPanel.Controls.Clear();
+                displayPanel.Controls.Add(terminalUI);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

@@ -23,6 +23,7 @@ namespace LoginForm.ServiceForms
         {
             richTextBox1.Text = "Welcome";
             richTextBox1.AppendText(Environment.NewLine + user.userName);
+            timeRichTxt.Text = "It is " + DateTime.Now.ToString();
         }
 
     }

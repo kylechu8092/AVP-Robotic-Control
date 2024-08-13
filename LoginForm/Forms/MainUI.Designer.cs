@@ -160,6 +160,7 @@ namespace LoginForm.Forms
             this.terminalBtn.Text = "           Serial Terminal";
             this.terminalBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.terminalBtn.UseVisualStyleBackColor = false;
+            this.terminalBtn.Click += new System.EventHandler(this.terminalBtn_Click);
             // 
             // settingsBtn
             // 
