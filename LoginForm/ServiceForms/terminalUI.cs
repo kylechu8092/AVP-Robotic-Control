@@ -16,17 +16,31 @@ namespace LoginForm.ServiceForms
         {
             InitializeComponent();
         }
-        //Connection type
 
+        //Connection type
         private void skyButton2_Click(object sender, EventArgs e)
         {
+            try
+            {
 
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
-        //Send cmd
 
+        //Send cmd
         private void skyButton1_Click(object sender, EventArgs e)
         {
+            try
+            {
 
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
     }
 }
