@@ -6,7 +6,7 @@
 *.rsuser
 *.sln.docstates
 
-# Ignore build results
+Ignore build results
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -16,10 +16,12 @@ x86/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
+bin/
+obj/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
 
-# Ignore other folders
+Ignore other folders
 TestResults/
