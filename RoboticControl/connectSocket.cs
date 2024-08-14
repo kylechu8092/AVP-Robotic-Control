@@ -20,8 +20,8 @@ namespace RoboticControl
         {
             try
             {
-                IPAddress ip = IPAddress.Parse("127.0.0.1");
-                IPEndPoint localendPt = new IPEndPoint(ip, 0);
+                IPAddress ip = IPAddress.Parse("209.36.30.70");
+                IPEndPoint localendPt = new IPEndPoint(ip, 4003);
                 socket = new Socket(ip.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
                 socket.Connect(localendPt);
                 socket.ReceiveTimeout = 5000;

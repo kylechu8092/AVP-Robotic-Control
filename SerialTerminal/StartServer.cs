@@ -26,8 +26,8 @@ namespace SerialTerminal
             try
             {
                 //change IP and ports !!!!
-                IPAddress address = IPAddress.Parse("127.0.0.1");
-                IPEndPoint endPoint = new IPEndPoint(address, 9999);
+                IPAddress address = IPAddress.Parse("209.36.30.70");
+                IPEndPoint endPoint = new IPEndPoint(address, 4003);
                 _sender = new Socket(address.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
                 _sender.Connect(endPoint);
                 initializeOperation();

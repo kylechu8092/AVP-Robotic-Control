@@ -151,13 +151,12 @@ namespace LoginForm.Forms
             this.terminalBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
             this.terminalBtn.FlatAppearance.BorderSize = 0;
             this.terminalBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.terminalBtn.Image = global::LoginForm.Properties.Resources.icons8_terminal_30;
             this.terminalBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.terminalBtn.Location = new System.Drawing.Point(3, 197);
             this.terminalBtn.Name = "terminalBtn";
             this.terminalBtn.Size = new System.Drawing.Size(177, 91);
             this.terminalBtn.TabIndex = 4;
-            this.terminalBtn.Text = "           Serial Terminal";
+            this.terminalBtn.Text = "           Terminal";
             this.terminalBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.terminalBtn.UseVisualStyleBackColor = false;
             this.terminalBtn.Click += new System.EventHandler(this.terminalBtn_Click);
