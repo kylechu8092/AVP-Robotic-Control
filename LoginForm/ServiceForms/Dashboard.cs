@@ -21,8 +21,8 @@ namespace LoginForm.ServiceForms
 
         public void displayDashBoard(UserDTO user)
         {
-            richTextBox1.Text = "Welcome";
-            richTextBox1.AppendText(Environment.NewLine + user.userName);
+            richTextBox1.Text = "Welcome ";
+            richTextBox1.AppendText(user.userName);
             timeRichTxt.Text = "It is " + DateTime.Now.ToString();
         }
 

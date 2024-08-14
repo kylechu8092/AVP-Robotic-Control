@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations", "Migrations\Mi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadManagement", "ThreadManagement\ThreadManagement.csproj", "{2B4D8AF0-7101-4C7A-8BA0-8AF18EC38C1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPTerminal", "SerialTerminal\TCPTerminal.csproj", "{CCDD3416-EB21-4010-8E98-D665B32CD7C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{2B4D8AF0-7101-4C7A-8BA0-8AF18EC38C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B4D8AF0-7101-4C7A-8BA0-8AF18EC38C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B4D8AF0-7101-4C7A-8BA0-8AF18EC38C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCDD3416-EB21-4010-8E98-D665B32CD7C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCDD3416-EB21-4010-8E98-D665B32CD7C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCDD3416-EB21-4010-8E98-D665B32CD7C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCDD3416-EB21-4010-8E98-D665B32CD7C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

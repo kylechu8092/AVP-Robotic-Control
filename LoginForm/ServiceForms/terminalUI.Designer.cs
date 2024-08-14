@@ -31,7 +31,7 @@
             this.displayCmdRichTxt = new System.Windows.Forms.RichTextBox();
             this.cmdTxt = new ReaLTaiizor.SkyTextBox();
             this.skyButton1 = new ReaLTaiizor.SkyButton();
-            this.skyComboBox1 = new ReaLTaiizor.SkyComboBox();
+            this.connectionCombo = new ReaLTaiizor.SkyComboBox();
             this.skyButton2 = new ReaLTaiizor.SkyButton();
             this.SuspendLayout();
             // 
@@ -72,25 +72,25 @@
             this.skyButton1.Text = "Send";
             this.skyButton1.Click += new System.EventHandler(this.skyButton1_Click);
             // 
-            // skyComboBox1
+            // connectionCombo
             // 
-            this.skyComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.skyComboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.skyComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.skyComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.skyComboBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skyComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(137)))));
-            this.skyComboBox1.FormattingEnabled = true;
-            this.skyComboBox1.ItemHeight = 16;
-            this.skyComboBox1.ItemHighlightColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(176)))), ((int)(((byte)(214)))));
-            this.skyComboBox1.Items.AddRange(new object[] {
+            this.connectionCombo.BackColor = System.Drawing.Color.Transparent;
+            this.connectionCombo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.connectionCombo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.connectionCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.connectionCombo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.connectionCombo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(94)))), ((int)(((byte)(137)))));
+            this.connectionCombo.FormattingEnabled = true;
+            this.connectionCombo.ItemHeight = 16;
+            this.connectionCombo.ItemHighlightColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(176)))), ((int)(((byte)(214)))));
+            this.connectionCombo.Items.AddRange(new object[] {
             "Ethernet Connection",
             "Serial Port Connection"});
-            this.skyComboBox1.Location = new System.Drawing.Point(75, 467);
-            this.skyComboBox1.Name = "skyComboBox1";
-            this.skyComboBox1.Size = new System.Drawing.Size(521, 22);
-            this.skyComboBox1.StartIndex = 0;
-            this.skyComboBox1.TabIndex = 3;
+            this.connectionCombo.Location = new System.Drawing.Point(75, 467);
+            this.connectionCombo.Name = "connectionCombo";
+            this.connectionCombo.Size = new System.Drawing.Size(521, 22);
+            this.connectionCombo.StartIndex = 0;
+            this.connectionCombo.TabIndex = 3;
             // 
             // skyButton2
             // 
@@ -111,7 +111,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.skyButton2);
-            this.Controls.Add(this.skyComboBox1);
+            this.Controls.Add(this.connectionCombo);
             this.Controls.Add(this.skyButton1);
             this.Controls.Add(this.cmdTxt);
             this.Controls.Add(this.displayCmdRichTxt);
@@ -127,7 +127,7 @@
         private System.Windows.Forms.RichTextBox displayCmdRichTxt;
         private ReaLTaiizor.SkyTextBox cmdTxt;
         private ReaLTaiizor.SkyButton skyButton1;
-        private ReaLTaiizor.SkyComboBox skyComboBox1;
+        private ReaLTaiizor.SkyComboBox connectionCombo;
         private ReaLTaiizor.SkyButton skyButton2;
     }
 }

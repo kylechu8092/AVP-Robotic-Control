@@ -9,6 +9,8 @@ namespace ThreadManagement
 {
     public static class ThreadList
     {
-        static Thread connection;
+        public static Thread connection;
+
+        public static Thread readThread;
     }
 }

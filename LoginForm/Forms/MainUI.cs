@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using FontAwesome;
 using LoginForm.ServiceForms;
 using ReaLTaiizor;
+using SerialTerminal;
 using UserManagement;
 
 namespace LoginForm.Forms
@@ -156,6 +157,7 @@ namespace LoginForm.Forms
                 terminalUI terminalUI = new terminalUI();
                 displayPanel.Controls.Clear();
                 displayPanel.Controls.Add(terminalUI);
+
             }
             catch (Exception ex)
             {

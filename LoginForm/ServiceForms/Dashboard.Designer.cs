@@ -37,10 +37,10 @@
             this.richTextBox1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Segoe UI Semilight", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(87, 75);
+            this.richTextBox1.Location = new System.Drawing.Point(87, 24);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(451, 93);
+            this.richTextBox1.Size = new System.Drawing.Size(735, 148);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
@@ -52,7 +52,7 @@
             this.timeRichTxt.Location = new System.Drawing.Point(87, 195);
             this.timeRichTxt.Name = "timeRichTxt";
             this.timeRichTxt.ReadOnly = true;
-            this.timeRichTxt.Size = new System.Drawing.Size(451, 93);
+            this.timeRichTxt.Size = new System.Drawing.Size(735, 268);
             this.timeRichTxt.TabIndex = 2;
             this.timeRichTxt.Text = "";
             // 
