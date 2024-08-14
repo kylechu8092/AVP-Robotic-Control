@@ -21,7 +21,8 @@ namespace SerialTerminal
         {
             try
             {
-                byte[] send = Encoding.UTF8.GetBytes(userInput);
+                
+                byte[] send = Encoding.UTF8.GetBytes(userInput + "\n\r");
                 _sender.Send(send);
             }
             catch { }

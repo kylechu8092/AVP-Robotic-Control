@@ -10,6 +10,5 @@ namespace RoboticControl
     {
         void sendCommand(string command);
 
-        void establishConnection();
     }
 }

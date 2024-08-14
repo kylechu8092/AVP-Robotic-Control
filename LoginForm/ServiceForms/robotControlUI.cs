@@ -8,17 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using RoboticControl;
+using System.Net.Sockets;
 
 namespace LoginForm.ServiceForms
 {
     public partial class robotControlUI : UserControl
     {
 
-        BrookRobot robot = new BrookRobot();
+        BrookRobot robot;
+        Socket currentConnection;
         
-        public robotControlUI()
+        public robotControlUI(Socket connection)
         {
             InitializeComponent();
+            robot = new BrookRobot(connection);
+            currentConnection = connection;
         }
 
         private void upBtn_Click(object sender, EventArgs e)
@@ -106,8 +110,10 @@ namespace LoginForm.ServiceForms
         {
             try
             {
-                robot.establishConnection();
-                connectTCPBtn.BackColor = Color.Green;
+                if(currentConnection != null)
+                {
+                    connectTCPBtn.BackColor = Color.Green;
+                }
             }
             catch (Exception ex)
             {

@@ -23,8 +23,8 @@ namespace PacketAnalyzer
                 else
                 {
                     
-                    //This must be configured on computer
-                    _device = devices[3];
+                    //This must/ be configured on computer
+                    _device = devices[5];
                     return _device;
                 }
             }

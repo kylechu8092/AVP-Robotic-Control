@@ -10,20 +10,9 @@ namespace RoboticControl
     public class BrookRobot : IRobot
     {
         Socket _sender;
-        public BrookRobot() 
+        public BrookRobot(Socket socket) 
         {
-            //establishConnection();
-        }
-        public void establishConnection()
-        {
-            try
-            {
-                _sender = new connectSocket().getSocket();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            _sender = socket;
         }
 
         public void sendCommand(string command)

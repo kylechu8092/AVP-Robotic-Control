@@ -631,6 +631,10 @@
       <Project>{ccdd3416-eb21-4010-8e98-d665b32cd7c5}</Project>
       <Name>TCPTerminal</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SocketManager\SocketManager.csproj">
+      <Project>{9814564b-9733-4ab0-bbca-3b75127c6c63}</Project>
+      <Name>SocketManager</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UserManagement\UserManagement.csproj">
       <Project>{146ad383-98a5-4d7f-9dd4-681ad7c93a6e}</Project>
       <Name>UserManagement</Name>

@@ -8,18 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SerialTerminal;
+using System.Net.Sockets;
+using SocketManager;
 
 namespace LoginForm.ServiceForms
 {
     public partial class terminalUI : UserControl
     {
         String connectionType = null;
-        StartServer server;
+        TCPSend terminal;
 
-        public terminalUI()
+        public terminalUI(Socket connection)
         {
             InitializeComponent();
-            server = new StartServer();
+            terminal = new TCPSend(connection);
+
         }
        
         public void intializeButtons()
@@ -32,12 +35,13 @@ namespace LoginForm.ServiceForms
         {
             try
             {
-                if (connectionCombo.SelectedIndex.Equals("Ethernet Connection"))
+                if (connectionCombo.SelectedItem.Equals("Ethernet Connection"))
                 {
                     skyButton1.Enabled = true;
                     connectionType = "ETHERNET";
+                    MessageBox.Show("Connected to ethernet");
                 }
-                else if (connectionCombo.SelectedIndex.Equals("Serial Connection"))
+                else if (connectionCombo.SelectedText.Equals("Serial Connection"))
                 {
                     skyButton1.Enabled = true;
                     connectionType = "SERIAL";
@@ -58,15 +62,20 @@ namespace LoginForm.ServiceForms
         {
             try
             {
-                if (cmdTxt.Text.Equals(""))
+                if(connectionType == null)
+                {
+                    MessageBox.Show("Select connection type");
+                }
+                else if (cmdTxt.Text.Equals(""))
                 {
                     MessageBox.Show("Enter a valid command");
                 }
+                
                 else
                 {
-                    if (connectionType.Equals("SERIAL"))
+                    if (connectionType.Equals("ETHERNET"))
                     {
-                        server.sender.serialSend(cmdTxt.Text);
+                        terminal.serialSend(cmdTxt.Text);
                         displayCmdRichTxt.AppendText(cmdTxt.Text + Environment.NewLine);
                     }
                 }
@@ -74,6 +83,27 @@ namespace LoginForm.ServiceForms
             catch (Exception ex)
             {
                 MessageBox.Show("Command error");
+            }
+        }
+
+        private void cmdTxt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmdTxt_Leave(object sender, EventArgs e)
+        {
+            if(cmdTxt.Text.Equals(""))
+            {
+                cmdTxt.Text = "Enter a command";
+            }
+        }
+
+        private void cmdTxt_Enter(object sender, EventArgs e)
+        {
+            if(cmdTxt.Text.Equals("Enter a command"))
+            {
+                cmdTxt.Text = "";
             }
         }
     }

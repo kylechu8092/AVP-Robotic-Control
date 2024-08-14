@@ -58,6 +58,9 @@
             this.cmdTxt.Text = "Enter a command";
             this.cmdTxt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.cmdTxt.UseSystemPasswordChar = false;
+            this.cmdTxt.Click += new System.EventHandler(this.cmdTxt_Click);
+            this.cmdTxt.Enter += new System.EventHandler(this.cmdTxt_Enter);
+            this.cmdTxt.Leave += new System.EventHandler(this.cmdTxt_Leave);
             // 
             // skyButton1
             // 

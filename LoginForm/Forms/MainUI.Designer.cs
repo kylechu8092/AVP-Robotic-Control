@@ -151,6 +151,7 @@ namespace LoginForm.Forms
             this.terminalBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
             this.terminalBtn.FlatAppearance.BorderSize = 0;
             this.terminalBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.terminalBtn.Image = global::LoginForm.Properties.Resources.icons8_terminal_30;
             this.terminalBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.terminalBtn.Location = new System.Drawing.Point(3, 197);
             this.terminalBtn.Name = "terminalBtn";

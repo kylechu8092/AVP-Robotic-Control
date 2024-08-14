@@ -1,25 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net.Sockets;
+using System.Net;
 
-namespace RoboticControl
+namespace SocketManager
 {
-    public class connectSocket
+    public class SharedSocket
     {
         Socket socket;
-        public connectSocket() 
-        {
-            SocketConnection();
+        public SharedSocket() 
+        { 
+            beginConnection();
         }
 
-        public void SocketConnection()
+        public void beginConnection()
         {
             try
             {
+                if (socket != null && socket.Connected)
+                {
+                    return;
+                }
                 IPAddress ip = IPAddress.Parse("209.36.30.70");
                 IPEndPoint localendPt = new IPEndPoint(ip, 4003);
                 socket = new Socket(ip.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
@@ -31,6 +35,7 @@ namespace RoboticControl
             {
                 throw e;
             }
+
         }
 
         public Socket getSocket()
